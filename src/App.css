@@ -1,38 +1,125 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+  font-family: 'Do Hyeon', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 80px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+
+.flex button {
+  color: rgb(0, 0, 0);
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.flex button:hover {
+  background:orange;
+}
+
+.flex button i {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flex h1 {
+  font-size: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex span {
+  height: 50px;
+  width: 50px;
+  margin: 0 30px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clock-container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 2px solid rgb(255, 166, 0);
+  padding: 50px 100px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.clock-container button {
+  color: rgb(0, 0, 0);
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock-container button:hover {
+  background:orange;
+}
+
+.clock-container span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.clock-container h1 {
+  margin: 0;
+  font-size: 60px;
+  text-align: center;
+}
+
+.about {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.about i {
+  font-size: 25px;
+  color: rgb(255, 30, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #00ff37;
 }
